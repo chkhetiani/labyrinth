@@ -3,7 +3,7 @@ namespace labyrinth {
 		int moves;
 		int level;
 		Position player_position;
-		Map map;
+		Level level;
 		
 		void make_move();
 	};	

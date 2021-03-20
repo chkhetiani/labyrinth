@@ -91,7 +91,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit6]
-FileName=game\map.h
+FileName=game\level.h
 CompileCpp=1
 Folder=game
 Compile=1
