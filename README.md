@@ -20,10 +20,61 @@ labyrinth game for uglimes class
 
 ---
 
-2 output example:
+### Player
 
-1. qwerty
-2. werty [locked]
-3. erty [locked]
-4. rty [locked]
+1. current move count `int`
+2. icon `char` `cin || file[avatar.txt]`
+
+---
+
+### level list
+
+1. count `int` `file[level_count.txt]`
+2. max level unlocked `int`
+
+---
+
+### level
+
+1. map `char[][]` `file[x.txt]`
+2. height `int` `file[x.txt]`
+3. width `int` `file[x.txt]`
+4. start `position` `file[x.txt]`
+5. end `position` `file[x.txt]`
+6. move count `int` `file[x.txt]`
+
+### position
+
+1. x `int`
+2. y `int`
+
+---
+
+## examples:
+
+Output example:
+
+```
+1.
+2. [locked]
+3. [locked]
+4. [locked]
    choose level to play: 2
+```
+
+Level files example:
+
+```
+5 \\ height
+4 \\ width
+2 \\ start position y
+1 \\ start position x
+3 \\ goal position y
+3 \\ goal position x
+5 \\ move count
++--+
+|  |
+|x |
+|  $
++--+
+```
