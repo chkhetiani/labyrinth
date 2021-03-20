@@ -2,6 +2,9 @@ namespace labyrinth {
 	class Level {
 		int height;
 		int width;
-		char[][] map;
+		char map[][];
+		position start;
+		position end;
+		int moveCount;
 	};
 }
