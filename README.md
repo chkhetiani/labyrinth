@@ -23,18 +23,19 @@ labyrinth game for uglimes class
 ### Player
 
 1. current move count `int`
-2. icon `char` `cin || file[avatar.txt]`
+2. curretn position `position`
+3. icon `char` `cin || file[avatar.txt]`
 
 ---
 
-### level list
+### Menu
 
-1. count `int` `file[level_count.txt]`
+1. level count `int` `file[level_count.txt]`
 2. max level unlocked `int`
 
 ---
 
-### level
+### Level
 
 1. map `char[][]` `file[x.txt]`
 2. height `int` `file[x.txt]`
@@ -42,6 +43,11 @@ labyrinth game for uglimes class
 4. start `position` `file[x.txt]`
 5. end `position` `file[x.txt]`
 6. move count `int` `file[x.txt]`
+
+### Game
+
+1. Level
+2. Player
 
 ### position
 
