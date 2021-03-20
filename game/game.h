@@ -5,7 +5,6 @@ namespace labyrinth {
 		Position player_position;
 		Map map;
 		
-		
 		void make_move();
 	};	
 }

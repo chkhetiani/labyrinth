@@ -1,7 +1,7 @@
 namespace labyrinth {
-	class Map {
+	class Level {
 		int height;
 		int width;
-		char[][] data;
-	};		
+		char[][] map;
+	};
 }
