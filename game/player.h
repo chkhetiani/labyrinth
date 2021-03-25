@@ -1,10 +1,14 @@
 #include <fstream>
+#include "position.h">
 namespace labyrinth {
 	int currentMoveCount;
-	position currentPosition;
+	Position currentPosition;
 	char icon;
+	int LevelsUnlocked;
+	
 	void newIcon(char newIcon){
-		ofstream icon("icon.txt");
+		std::ofstream icon("icon.txt");
 		icon << newIcon;
+		icon.close();
 	}
 }
