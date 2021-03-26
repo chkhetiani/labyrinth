@@ -7,8 +7,9 @@ namespace labyrinth {
 	int LevelsUnlocked;
 	
 	void newIcon(char newIcon){
-		std::ofstream icon("icon.txt");
-		icon << newIcon;
-		icon.close();
+		std::ofstream iconF("icon.txt");
+		icon = newIcon;
+		iconF << newIcon;
+		iconF.close();
 	}
 }

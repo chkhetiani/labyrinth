@@ -1,10 +1,11 @@
 namespace labyrinth {
-	class Level {
+	struct Level {
 		int height;
 		int width;
-		char map[][20];
+		char map[][100];
 		std::pair<int,int> start;
 		std::pair<int,int> end;
 		int moveCount;
+		bool won = false;
 	};
 }
