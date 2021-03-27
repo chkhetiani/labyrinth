@@ -1,5 +1,4 @@
 #include "level.h"
-#include "info.h"
 #include <fstream>
 namespace labyrinth {
 	class Game {
