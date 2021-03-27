@@ -114,6 +114,7 @@ namespace labyrinth {
 		}
 		if (currentPosition.x == endPosition.x && currentPosition.y == endPosition.y){
 			currentLevel.won=true;
+			
 		}
 	}
 	

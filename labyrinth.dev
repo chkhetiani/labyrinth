@@ -121,7 +121,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit8]
-FileName=info.h
+FileName=Menu.h
 CompileCpp=1
 Folder=
 Compile=1

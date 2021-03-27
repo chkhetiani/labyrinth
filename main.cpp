@@ -13,7 +13,7 @@ int main() {
 	while(started){
 		cout << ":::::::::::::: MAIN MENU ::::::::::::::\n";
 		cout << "Icon :: " << icon <<"\n";
-		cout << ":: Commands :: \n:icon:\n:exit:\n:play:\n";
+		cout << ":: Commands :: \n:icon:\n:play:\n:exit:\n";
 		string nn;
 		cin >> nn;
 		if (nn == "icon"){
@@ -48,13 +48,22 @@ int main() {
 					system("cls");
 					char charr;
 					drawLevel();
+					cout << "\n" << currentMoveCount;
+					if (currentLevel.won){
+						currentLevel.won=false;
+					}
 					charr = getch();
 					makeMove(charr);
-					if (currentLevel.won){
-						LevelsUnlocked++;
+					if (currentLevel.won == 1){
+						if (levelNumber-'0' == LevelsUnlocked){
+							LevelsUnlocked++;
+						}
+						currentLevel.won = false;
+						saveGame();
 						break;
 					}
 				}
+				currentLevel.won= false;
 				system("cls");
 			}
 		}
